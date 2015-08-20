@@ -1,56 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Mandeep Singh</title>
-    <script type="text/javascript" href="wavesurfer.min.js"></script>
-    <script type="text/javascript" href="main.js"></script>
-    <script type="text/javascript">
-        var intViewportHeight = window.innerHeight;
-        var intViewportWidth = window.innerWidth;
-        document.write('Current Viewport width is: '+intViewportWidth); 
-        document.write('<br />');
-        document.write('Current Viewport height is: '+intViewportHeight); 
-        document.write('<br />');
-        document.write('hi');
-        alert("how are you?" + intViewportWidth);
-        var scrcheck = function(content){
-        var scroll = content.scrollHeight;
-        alert('scroll height for div content is :'+scroll + ' px');
-        document.write('scroll height for div is:'+scroll);
-        return scrcheck; 
-        }
-
-        scrcheck(h4);
-        var getsize = function(){
-            var container = document.getElementById("content");
-            var message="The height : "+container.clientHeight;
-            alert(message);
-        }
-        document.write('container:'+message);
-
-    </script>
-    <style type="text/css">
-        body{
-            color:#EEE;
-            background-color:black;
-        }
-        #content{
-            background-color:#6BC;
-        }
-        #all{
-            background-color:white;
-            height:100px;
-        }
-    </style>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="http://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/alphabet.js"></script>
   </head>
   <body>
-    <div id="content">
-        <h4 id="h4">YO!!</h4>
-        <h2 id="h2">Mandeep Singh</h2>
-        <h4 id="h4">GNDEC, Ludhiana</h4>
-        <button onclick="scrcheck(h2)">Check</button>
-        <button onclick="scrcheck(content)">Check div scrollheight</button>
-        <button onclick="getsize()">getsize</button>
+    <canvas id="myCanvas"></canvas>
+    <script type="text/javascript" src="http://s3.amazonaws.com/codecademy-content/courses/hour-of-code/js/bubbles.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+    <div>
+    	<a href="status-box/index.html">Status-box</a>
+    	<a href="http://github.com/mandeeps708">Github</a>
     </div>
   </body>
 </html>
