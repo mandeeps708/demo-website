@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>third one</title>
+        <script type="text/javascript">
+function submitForm(form)
+{
+        var oTextarea = form["tekst"];
+           
+            var iHeight = oTextarea.scrollHeight;
+
+                if(iHeight > 298)
+                        {
+                                    alert("Inserted text higher than 298px!");
+                                            return false;
+                                                }
+                    
+                    return false;
+}
+        </script>
+    </head>
+    <body>
+
+        <form onsubmit="return submitForm(this)">
+                <textarea id="tekst"></textarea><input type="submit">
+            </form>
+
+    </body>
+</html>

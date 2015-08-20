@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>js</title>
+
+        <script type="text/javascript">
+            function fnCheckScroll(){
+                var iNewHeight = oDiv.scrollHeight;
+                alert("The value of the scrollHeight property is: " 
+                            + iNewHeight + "px"); 
+}
+        </script>
+    </head>
+
+    <body>
+        <div id="oDiv" style="overflow: scroll; height= 100px; width= 250px; text-align: left">
+            <p>This is a div</p>    
+        </div>
+            <button onclick="fnCheckScroll()">Check scrollHeight</button>
+    </body>
+</html>
